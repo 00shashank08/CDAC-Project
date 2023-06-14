@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="vlabstyle.css">
+        <title>Vlab</title>
+    </head>
+    <body>
+        <div class="buttons">
+        <label for="sidea" style="font-size: 1.5vw">Enter base length : </label>
+        <input type="text" id="sidea" style="width: 2vw;"><br><br>
+        <label for="sideb" style="font-size: 1.5vw;">Height length is 1 </label><br><br>
+        <label id="squareans" style="font-size: 1.3vw; color: darkblue;">Hypoteneuse is: ____</label></br>
+        <button type="button" id="clickbtn1" onclick="calculate()">Calculate</button>
+        <img class="formula" src="formula.jpg">
+        <p id="instructions">Instructions: Start with base length as 1. </br>The base of the next triangle to be constructed is the same as the hypoteneuse of the previously drawn triangle</p><br>
+        <button type="button" id="clickbtn2">Construct triangle</button>
+       <!-- <button type="button" id="clickbtn5">join hypo</button>  -->
+        <button type="button" id="clickbtn3">rotate by 10 degree</button>
+        <button type="button" id="clickbtn4">rotate by 1 degree</button><br><br>
+        <p style="padding: 2px; text-align: center">Reference: √2=1.414 | √3=1.732 | √5=2.236 | √6=2.449</p>
+        </div>
+        <div id="mytools">
+            <img class="tools" id="protractor" src="protractor.png" width="325.65" height="180.05">
+        </div>
+        <canvas>
+        </canvas>
+        <script src="script.js"></script>
+    </body>
+</html>
